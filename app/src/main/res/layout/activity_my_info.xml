@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
                                               xmlns:app="http://schemas.android.com/apk/res-auto"
                                               xmlns:tools="http://schemas.android.com/tools"
@@ -8,6 +9,16 @@
                                               android:orientation="vertical"
                                               android:gravity="bottom"
         >
+=======
+<androidx.appcompat.widget.LinearLayoutCompat
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+>>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
 
     <LinearLayout
             android:layout_width="match_parent"
@@ -17,11 +28,16 @@
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+<<<<<<< HEAD
                 android:fontFamily="@font/preten_medium"
+=======
+                android:fontFamily="@font/pretendard"
+>>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
                 android:textSize="24sp"
                 android:layout_marginTop="45dp"
                 android:text="내 정보"
                 android:textColor="@color/black">
+<<<<<<< HEAD
 
         </TextView>
     </LinearLayout>
@@ -111,39 +127,148 @@
             android:gravity="center"
             android:padding="15dp"
             >
+=======
+>>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
 
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
         <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+<<<<<<< HEAD
                 android:background="@drawable/roundstyle10dp"
                 android:backgroundTint="@color/white"
                 android:orientation="vertical">
 
+=======
+                android:orientation="vertical">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#CCC"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="30dp"
+                        android:fontFamily="@font/pretendard"
+                        android:text="오늘의 점수">
+
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:id="@+id/today_score"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:fontFamily="@font/pretendard"
+                        android:textColor="@color/black"
+                        android:text="-"
+                        android:layout_marginLeft="40dp"
+                        android:gravity="center"
+                        android:textSize="68sp">
+                </TextView>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/pretendard"
+                        android:text="점">
+                </TextView>
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    <TextView
+                            android:id="@+id/date_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="90dp"
+                            android:layout_marginLeft="60dp"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/pretendard"
+                            android:textSize="32sp"
+                            android:textColor="#505050">
+                    </TextView>
+
+                    <TextView
+                            android:id="@+id/day_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="90dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="18dp"
+                            android:fontFamily="@font/pretendard"
+                            android:textSize="14sp"
+                            android:textColor="#505050">
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:gravity="center"
+            >
+        <LinearLayout
+                android:layout_width="330dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/roundstyle10dp"
+                android:backgroundTint="@color/white"
+                android:orientation="vertical">
+>>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
             <TextView
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:layout_marginLeft="220dp"
+<<<<<<< HEAD
                     android:fontFamily="@font/preten_medium"
                     android:text="해당 점수"
                     android:textColor="#CCC">
             </TextView>
 
+=======
+                    android:fontFamily="@font/pretendard"
+                    android:text="해당 점수"
+                    android:textColor="#CCC">
+            </TextView>
+>>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
             <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
                 <TextView
                         android:id="@+id/score_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+<<<<<<< HEAD
                         android:fontFamily="@font/preten_medium"
+=======
+                        android:fontFamily="@font/pretendard"
+>>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
                         android:layout_marginLeft="230dp"
                         android:text="-"
                         android:textSize="18sp"
                         android:textColor="@color/black">
                 </TextView>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
                 <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -170,10 +295,16 @@
             android:layout_width="match_parent"
             android:layout_height="270dp"
             android:orientation="vertical"
+<<<<<<< HEAD
             android:padding="15dp"
             android:gravity="center">
         <LinearLayout
                 android:layout_width="match_parent"
+=======
+            android:gravity="center">
+        <LinearLayout
+                android:layout_width="330dp"
+>>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
                 android:layout_height="150dp"
                 android:background="@drawable/roundstyle10dp"
                 android:backgroundTint="#F0F0F0"
@@ -182,7 +313,11 @@
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+<<<<<<< HEAD
                     android:fontFamily="@font/preten_medium"
+=======
+                    android:fontFamily="@font/pretendard"
+>>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
                     android:textColor="#888888"
                     android:textSize="18sp"
                     android:text="주간 솔루션">
@@ -195,7 +330,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center"
+<<<<<<< HEAD
                         android:fontFamily="@font/preten_light"
+=======
+                        android:fontFamily="@font/pretendard"
+>>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
                         android:textSize="12sp"
                         android:textColor="#222222"
                         android:text="배고파요 ㅜㅜ">
@@ -209,7 +348,10 @@
                 android:layout_width="330dp"
                 android:layout_height="65dp"
                 android:layout_marginTop="15dp"
+<<<<<<< HEAD
                 android:padding="10dp"
+=======
+>>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
                 android:background="@drawable/roundstyle10dp"
                 android:backgroundTint="#F0F0F0">
 
@@ -218,7 +360,33 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/aladin_image1"
+<<<<<<< HEAD
                     android:layout_centerVertical="true"/>
+=======
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/pretendard"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="#888888"
+                    android:text="추천도서 바로가기"/>
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/imageView2"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/right"/>
+>>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
 
             <TextView
                     android:layout_width="wrap_content"
@@ -242,7 +410,9 @@
                     android:src="@drawable/right"/>
 
         </RelativeLayout>
+
     </LinearLayout>
+<<<<<<< HEAD
     <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottomNavigationView"
             android:layout_width="match_parent"
@@ -255,4 +425,22 @@
             app:itemRippleColor="@color/black"
             />
 
+=======
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavigationView"
+                android:layout_width="match_parent"
+                android:layout_height="77dp"
+                android:background="@color/white"
+                android:layout_gravity="bottom"
+                app:labelVisibilityMode="unlabeled"
+                app:menu="@menu/bottom_nav_menu"
+                app:itemIconTint="@drawable/menu_selector_color"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+    </LinearLayout>
+>>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
 </androidx.appcompat.widget.LinearLayoutCompat>

@@ -59,8 +59,12 @@ dependencies {
     implementation 'com.squareup.okhttp3:logging-interceptor:4.9.1'
     // picasso
     implementation 'com.squareup.picasso:picasso:2.8'
+<<<<<<< HEAD
     // viewpager
     implementation 'androidx.viewpager2:viewpager2:1.0.0'
+=======
+
+>>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
 
 
 

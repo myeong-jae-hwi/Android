@@ -11,9 +11,12 @@ import android.util.TypedValue;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
+<<<<<<< HEAD
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
+=======
+>>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -134,7 +137,7 @@ public class MyInfo extends AppCompatActivity {
 
         if (!isAlarmSet) {
             long initialDelay = calculateDelayForNextMonday();
-             resetWeeklyWorkRequest =
+            resetWeeklyWorkRequest =
                     new PeriodicWorkRequest.Builder(WeeklyResetWorker.class, 7, TimeUnit.DAYS)
                             .setInitialDelay(initialDelay, TimeUnit.MILLISECONDS)
                             .addTag("resetweeklydata")
@@ -213,6 +216,7 @@ public class MyInfo extends AppCompatActivity {
 
             }
         });
+<<<<<<< HEAD
 
         // 목표 점수
 //        goalScoreText = findViewById(R.id.goal_score);
@@ -226,6 +230,8 @@ public class MyInfo extends AppCompatActivity {
 //            goalScoreText.setText("" + previousGoalScore);
 //            updateChartWithGoalScore(previousGoalScore);
 //        }
+=======
+>>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
 
         //버튼 메소
 
@@ -300,47 +306,6 @@ public class MyInfo extends AppCompatActivity {
         });
     }
 
-    private String getCurrentMonthAndWeek() {
-        Calendar calendar = Calendar.getInstance();
-
-        // 현재 월 가져오기
-        SimpleDateFormat monthFormat = new SimpleDateFormat("M", Locale.getDefault());
-        String month = monthFormat.format(calendar.getTime());
-
-        // 현재 주차 가져오기
-        int weekOfYear = calendar.get(Calendar.WEEK_OF_MONTH);
-
-        return month + "월 " + weekOfYear + "주차";
-    }
-
-    private String getCurrentWeekDates() {
-        Calendar calendar = Calendar.getInstance();
-        calendar.setFirstDayOfWeek(Calendar.SUNDAY);
-
-        int currentWeek = calendar.get(Calendar.WEEK_OF_MONTH);
-
-        // 현재 주의 시작일과 종료일 계산
-        calendar.set(Calendar.WEEK_OF_MONTH, currentWeek);
-        calendar.set(Calendar.DAY_OF_WEEK, Calendar.SUNDAY);
-        Date startDate = calendar.getTime();
-
-        calendar.set(Calendar.DAY_OF_WEEK, Calendar.SATURDAY);
-        Date endDate = calendar.getTime();
-
-        // 날짜 형식 지정
-        SimpleDateFormat dateFormat = new SimpleDateFormat("d", Locale.getDefault());
-
-        // 해당 주의 날짜 목록 생성
-        List<String> dates = new ArrayList<>();
-        calendar.setTime(startDate);
-        while (!calendar.getTime().after(endDate)) {
-            dates.add(dateFormat.format(calendar.getTime()));
-            calendar.add(Calendar.DAY_OF_MONTH, 1);
-        }
-
-        return String.join("   ", dates);
-    }
-
     // 파이어베이스
     private void fetchData(FirestoreCallback callback) {
         db.collection("WeekChart").orderBy("label")
@@ -410,18 +375,36 @@ public class MyInfo extends AppCompatActivity {
         return nextMonday.getTimeInMillis() - now.getTimeInMillis();
     }
 
-    // 목표 점수 저장
-//    private void saveGoalScore(int goalScore) {
-//        SharedPreferences sharedPreferences = getSharedPreferences("GoalScorePrefs", Context.MODE_PRIVATE);
-//        SharedPreferences.Editor editor = sharedPreferences.edit();
-//        editor.putInt("goalScore", goalScore);
-//        editor.apply();
-//    }
-//    private int loadGoalScore() {
-//        SharedPreferences sharedPreferences = getSharedPreferences("GoalScorePrefs", Context.MODE_PRIVATE);
-//        return sharedPreferences.getInt("goalScore", 0);
-//    }
+// 오늘의 점수 가져오기
+    private void fetchTodayDataAndCalculateAverage() {
+        fetchtodayData(new FirestoreCallback() {
+            @Override
+            public void onDataLoaded(ArrayList<BarEntry> entries) {
+                int totalValue = 0;
+                int dataCount = entries.size();
 
+                // 데이터에서 value 필드 값을 추출하고 총합 계산
+                for (BarEntry entry : entries) {
+                    totalValue += (int) entry.getY();
+                }
+
+                // 데이터가 없을 경우 0을 출력하거나 다른 처리를 수행할 수 있습니다.
+                if (dataCount == 0) {
+                    // 예: today_score.setText("데이터 없음");
+                } else {
+                    // 평균 계산
+                    int averageValue = totalValue / dataCount;
+                    if (averageValue ==100){
+                        today_score.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 50);
+                    }
+                    // 평균 값을 today_score 텍스트뷰에 출력
+                    today_score.setText(String.valueOf(averageValue));
+                }
+            }
+        });
+    }
+
+<<<<<<< HEAD
     //목표 점수
 //    private void showGoalScorePopup() {
 //        AlertDialog.Builder builder = new AlertDialog.Builder(MyInfo.this);
@@ -487,6 +470,8 @@ public class MyInfo extends AppCompatActivity {
         });
     }
 
+=======
+>>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
 
     // 솔루션
     private void updateChartWithGoalScore(int goalScore) {

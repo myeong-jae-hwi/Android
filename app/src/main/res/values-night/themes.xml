@@ -1,8 +1,14 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.MyApplication" parent="Theme.Material3.DayNight.NoActionBar">
+<<<<<<< HEAD
         <item name="colorPrimary">@color/white</item>
 
+=======
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">@color/white</item>
+>>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
         <item name="windowNoTitle">true</item>
     </style>
 </resources>

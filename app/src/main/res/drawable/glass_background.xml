@@ -13,4 +13,8 @@
             <corners android:radius="10dp" /> <!-- 둥근 모서리 설정 -->
         </shape>
     </item>
+<<<<<<< HEAD
 </layer-list>
+=======
+</layer-list>
+>>>>>>> 4482156178dfe3196008316d0a3711952224d5bd

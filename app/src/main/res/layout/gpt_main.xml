@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,6 +10,43 @@
     android:orientation="vertical"
     android:background="#BDCEE0"
     tools:context=".ChatGpt">
+=======
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:background="#BDCEE0"
+        tools:context=".ChatGpt">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+        <ImageButton
+                android:id="@+id/finish_Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#BDCEE0"
+                android:src="@drawable/close_2"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="13dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/pretendard"
+                android:text="GPT 선생님">
+
+        </TextView>
+
+    </LinearLayout>
+>>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
 
     <LinearLayout
             android:layout_width="match_parent"
@@ -35,12 +73,21 @@
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
+<<<<<<< HEAD
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:layout_marginBottom="15dp"
         android:layout_above="@+id/bottom_layout"/>
+=======
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="15dp"
+            android:layout_above="@+id/bottom_layout"/>
+>>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
 
     <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/InteractiveBtn"
@@ -49,11 +96,19 @@
             android:fontFamily="@font/pretendard"
             android:text="대화형"
             style="?android:attr/borderlessButtonStyle"
+<<<<<<< HEAD
+=======
+            android:layout_marginStart="65dp"
+>>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
             android:layout_marginBottom="60dp"
             android:textColor="@color/black"
             android:background="@drawable/roundstyle20dp"
             android:textSize="20sp">
     </androidx.appcompat.widget.AppCompatButton>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
     <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/QuestionBtn"
             android:layout_width="600px"
@@ -63,6 +118,10 @@
             style="?android:attr/borderlessButtonStyle"
             android:textColor="@color/black"
             android:background="@drawable/roundstyle20dp"
+<<<<<<< HEAD
+=======
+            android:layout_marginStart="65dp"
+>>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
             android:layout_marginBottom="60dp"
             android:textSize="20sp">
     </androidx.appcompat.widget.AppCompatButton>
@@ -70,6 +129,10 @@
     <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
         <Button
                 android:id="@+id/continue_Btn"
                 android:layout_width="100dp"
@@ -78,16 +141,27 @@
                 android:text="다음문제"
                 android:textSize="12dp"
                 android:textColor="@color/black"
+<<<<<<< HEAD
                 android:layout_marginLeft="220dp"
+=======
+                android:layout_marginStart="220dp"
+>>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
                 android:layout_marginBottom="15dp"
                 android:visibility="gone"/>
     </LinearLayout>
 
     <FrameLayout
+<<<<<<< HEAD
         android:layout_width="match_parent"
         android:layout_height="52dp"
         android:layout_marginBottom="20dp"
         android:id="@+id/bottom_layout">
+=======
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/bottom_layout">
+>>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
 
         <EditText
                 android:id="@+id/et_msg"
@@ -110,7 +184,11 @@
                 android:textColor="@color/black"
                 android:layout_marginTop="5dp"
                 style="?android:attr/borderlessButtonStyle"
+<<<<<<< HEAD
                 android:fontFamily="@font/preten_medium"
+=======
+                android:fontFamily="@font/pretendard"
+>>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
                 android:textSize="16sp">
         </androidx.appcompat.widget.AppCompatButton>
 

@@ -14,9 +14,15 @@ import com.bumptech.glide.Glide;
 import com.example.myapplication.MainActivity;
 import com.example.myapplication.R;
 import com.example.myapplication.Utils;
+<<<<<<< HEAD
 import com.example.myapplication.weater.WeatherApi;
 import com.example.myapplication.weater.WeatherDescriptionConverter;
 import com.example.myapplication.weater.WeatherResponse;
+=======
+import com.example.myapplication.weather.WeatherApi;
+import com.example.myapplication.weather.WeatherDescriptionConverter;
+import com.example.myapplication.weather.WeatherResponse;
+>>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
 import com.squareup.picasso.Picasso;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
@@ -85,7 +91,11 @@ public class lockscreen extends AppCompatActivity {
         updateWeatherInfo();
 
         ImageView gifImageView = findViewById(R.id.rain_img);
+<<<<<<< HEAD
         Glide.with(this).load(R.drawable.pika).into(gifImageView);
+=======
+        Glide.with(this).load(R.drawable.rain2).into(gifImageView);
+>>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
     }
 
     @Override
@@ -217,7 +227,11 @@ public class lockscreen extends AppCompatActivity {
         });
     }
 
+<<<<<<< HEAD
     // updateWeatherUI 메서드 내부에 이미지 로드 코드 추가
+=======
+// updateWeatherUI 메서드 내부에 이미지 로드 코드 추가
+>>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
     private void updateWeatherUI(WeatherResponse weatherData) {
         int weatherId = weatherData.getWeather().get(0).getId();
         String weatherDescription = WeatherDescriptionConverter.convertToKorean(weatherId);

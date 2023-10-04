@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -32,7 +33,42 @@
             android:textColor="@color/black"
             android:textSize="18sp"
             android:text="Hello World"/>
+=======
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
+    <LinearLayout
+            android:id="@+id/left_chat_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/chat_size">
+>>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
+
+        </ImageView>
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="#FFF"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="10dp"
+                android:padding="8dp">
+
+
+            <TextView
+                    android:id="@+id/left_chat_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:text="Hello World"/>
+
+        </LinearLayout>
     </LinearLayout>
     </LinearLayout>
 

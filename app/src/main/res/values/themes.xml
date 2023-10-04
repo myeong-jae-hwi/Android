@@ -2,7 +2,14 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.MyApplication" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
+<<<<<<< HEAD
          <item name="colorPrimary">@color/black</item>
+=======
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorControlHighlight">#FF8800</item>
+        <item name="colorAccent">#FF0000</item>
+>>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
     </style>
 
     <style name="Theme.MyApplication" parent="Base.Theme.MyApplication" />

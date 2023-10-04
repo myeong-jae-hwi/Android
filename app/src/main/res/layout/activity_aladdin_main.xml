@@ -5,7 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
+<<<<<<< HEAD
                 android:background="#FFF"
+=======
+    android:background="#F0F0F0"
+>>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
     tools:context=".aladdin.AladdinMainActivity">
 
     <EditText

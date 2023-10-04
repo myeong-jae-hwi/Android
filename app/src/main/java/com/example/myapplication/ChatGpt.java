@@ -5,21 +5,17 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import com.example.myapplication.adapter.MessageAdapter;
-import com.example.myapplication.book.BookMainActivity;
 import com.example.myapplication.model.Message;
 import com.google.android.gms.tasks.*;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.firestore.*;
 import okhttp3.*;
 import org.json.JSONArray;
@@ -41,6 +37,10 @@ public class ChatGpt extends AppCompatActivity {
     RecyclerView recycler_view;
     EditText et_msg;
     Button btn_send;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
     Button InteractiveBtn;    // 대화형
     Button QuestionBtn;       // 문제형
     ImageButton finishBtn;
@@ -61,6 +61,14 @@ public class ChatGpt extends AppCompatActivity {
     private int wrong_ans = 0;
     private int Switch = 0;
 
+<<<<<<< HEAD
+=======
+    // API
+    public static final MediaType JSON = MediaType.get("application/json; charset=utf-8");
+    OkHttpClient client;
+    private static final String MY_SECRET_KEY = "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";
+
+>>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
     //네비게이션바 설정
 
     @Override
@@ -96,13 +104,21 @@ public class ChatGpt extends AppCompatActivity {
 
         // 주간 데이터
         Week = getDayOfWeek();
+<<<<<<< HEAD
         Log.d("GPT", "Switch: " + Switch);
+=======
+        Log.d("GPT","Switch: " + Switch);
+>>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
 
 
         finishBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (Switch == 1 || Switch == 2) {
+<<<<<<< HEAD
+=======
+                    Log.d("GPT", "여기로 왔어요");
+>>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
 
                     DocumentReference dateRef = db.collection("Chart").document(ability);
 
@@ -150,7 +166,11 @@ public class ChatGpt extends AppCompatActivity {
 
                     Intent intent = new Intent(ChatGpt.this, MainActivity.class);
                     startActivity(intent);
+<<<<<<< HEAD
                 } else {
+=======
+                } else{
+>>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
                     Intent intent = new Intent(ChatGpt.this, MainActivity.class);
                     startActivity(intent);
                 }
@@ -174,7 +194,11 @@ public class ChatGpt extends AppCompatActivity {
                     et_msg.setText("");
 
                     callAPI(question);
+<<<<<<< HEAD
                     continueBtn.setVisibility(View.GONE);
+=======
+                    continueBtn.setVisibility(View.INVISIBLE);
+>>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
                 }
             }
         });
@@ -661,8 +685,13 @@ public class ChatGpt extends AppCompatActivity {
                             for (QueryDocumentSnapshot document : task.getResult()) {
                                 sum += document.getLong("value");
                                 count++;
+<<<<<<< HEAD
                                 Log.d("GPT", "sum: " + sum);
                                 Log.d("GPT", "count: " + count);
+=======
+                                Log.d("GPT","sum: " + sum);
+                                Log.d("GPT","count: " + count);
+>>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
                             }
 
                             if (count > 0) {
