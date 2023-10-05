@@ -41,7 +41,7 @@ The child can increase the time spent using the application by talking to GPT or
 ※ Please note that GPT's evaluation may not be accurate.<br><br><br><br>
 
 
-
+---
 GPT를 이용한 한국어 문제풀이 어플리케이션 입니다. <br><br>
 GPT와의 대화 혹은 GPT가 내는 문제를 맞추면 GPT의 평가가 이루어집니다. 그 점수는 홈 화면과 내정보 창에 그래프로 나타나게 되며 점수에 따른 코멘트를 해줍니다. <br><br>
 부모 앱(관리자)을 이용해 아이의 폰을 통제합니다. 부모는 독후감의 개수, 앱 사용시간을 지정하여 아이에게 미션을 줄 수 있으며 미션을 끝내지 않으면 아이의 폰에 깔려있는 어플이 강제 실행됩니다. <br><br>
