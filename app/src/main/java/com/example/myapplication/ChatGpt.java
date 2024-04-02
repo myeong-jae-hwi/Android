@@ -61,14 +61,10 @@ public class ChatGpt extends AppCompatActivity {
     private int wrong_ans = 0;
     private int Switch = 0;
 
-<<<<<<< HEAD
-=======
     // API
     public static final MediaType JSON = MediaType.get("application/json; charset=utf-8");
     OkHttpClient client;
-    private static final String MY_SECRET_KEY = "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";
-
->>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
+    private static final String MY_SECRET_KEY = "키 입력";
     //네비게이션바 설정
 
     @Override
