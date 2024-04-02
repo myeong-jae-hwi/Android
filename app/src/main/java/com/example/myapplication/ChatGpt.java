@@ -104,24 +104,13 @@ public class ChatGpt extends AppCompatActivity {
 
         // 주간 데이터
         Week = getDayOfWeek();
-<<<<<<< HEAD
         Log.d("GPT", "Switch: " + Switch);
-=======
-        Log.d("GPT","Switch: " + Switch);
->>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
-
-
         finishBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (Switch == 1 || Switch == 2) {
-<<<<<<< HEAD
-=======
                     Log.d("GPT", "여기로 왔어요");
->>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
-
                     DocumentReference dateRef = db.collection("Chart").document(ability);
-
                     dateRef
                             .get()
                             .addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
@@ -166,11 +155,7 @@ public class ChatGpt extends AppCompatActivity {
 
                     Intent intent = new Intent(ChatGpt.this, MainActivity.class);
                     startActivity(intent);
-<<<<<<< HEAD
-                } else {
-=======
                 } else{
->>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
                     Intent intent = new Intent(ChatGpt.this, MainActivity.class);
                     startActivity(intent);
                 }
@@ -194,11 +179,7 @@ public class ChatGpt extends AppCompatActivity {
                     et_msg.setText("");
 
                     callAPI(question);
-<<<<<<< HEAD
-                    continueBtn.setVisibility(View.GONE);
-=======
                     continueBtn.setVisibility(View.INVISIBLE);
->>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
                 }
             }
         });
@@ -685,15 +666,9 @@ public class ChatGpt extends AppCompatActivity {
                             for (QueryDocumentSnapshot document : task.getResult()) {
                                 sum += document.getLong("value");
                                 count++;
-<<<<<<< HEAD
                                 Log.d("GPT", "sum: " + sum);
                                 Log.d("GPT", "count: " + count);
-=======
-                                Log.d("GPT","sum: " + sum);
-                                Log.d("GPT","count: " + count);
->>>>>>> 4482156178dfe3196008316d0a3711952224d5bd
                             }
-
                             if (count > 0) {
                                 double average = (double) sum / count;
                                 Map<String, Object> data = new HashMap<>();
